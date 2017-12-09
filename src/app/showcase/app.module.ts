@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { PlayerModule } from '../components/player/player.module';
 
 
 @NgModule({
@@ -10,7 +10,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    BrowserModule,
+
+    PlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
